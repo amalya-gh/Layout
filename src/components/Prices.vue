@@ -43,10 +43,12 @@
         line-height: 19px;
         color: #6C7287;
     }
+
     ul li {
         margin-right: 20px;
     }
-    ul li:last-child{
+
+    ul li:last-child {
         margin-right: 0;
     }
 </style>

@@ -5,16 +5,14 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    selectedValues:{}
+    selectedValues: {}
   },
   mutations: {
-    setSelectedValues(state, val){
+    setSelectedValues(state, val) {
       state.selectedValues = val
 
     }
   },
-  actions: {
-  },
-  modules: {
-  }
+  actions: {},
+  modules: {}
 })

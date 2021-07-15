@@ -45,7 +45,7 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 19px;
-        color: #656D7A!important;
+        color: #656D7A !important;
     }
 
     ul {
@@ -53,21 +53,26 @@
         display: flex;
         padding: 0;
     }
-    ul li{
+
+    ul li {
         margin-right: 30px;
     }
-    svg{
+
+    svg {
         margin-left: 15px;
     }
-    ul li a:hover{
-        color: #232F41!important;
-        text-decoration: none!important;
+
+    ul li a:hover {
+        color: #232F41 !important;
+        text-decoration: none !important;
     }
-    @media (max-width: 1300px){
-        svg{
+
+    @media (max-width: 1300px) {
+        svg {
             margin-left: 5px;
         }
-        ul li{
+
+        ul li {
             margin-right: 15px;
         }
     }

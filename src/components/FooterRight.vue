@@ -21,9 +21,11 @@
     form {
         display: flex;
     }
-.footer-right{
-    width: 50%;
-}
+
+    .footer-right {
+        width: 50%;
+    }
+
     .subscribe {
         background: #DFE0E4;
         border: 1px solid #009DBC;
@@ -46,14 +48,17 @@
         outline: none;
         color: #FFFFFF;
     }
-    @media (max-width: 425px){
-    .footer-right{
+
+    @media (max-width: 425px) {
+        .footer-right {
             width: 100%;
         }
-        label{
+
+        label {
             width: 40%;
         }
-        button{
+
+        button {
             width: 60%;
         }
     }

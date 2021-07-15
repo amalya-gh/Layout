@@ -20,14 +20,15 @@
 
   export default {
     name: 'Home',
-    components: {MainFooter,  MainContent, MainHeader}
+    components: {MainFooter, MainContent, MainHeader}
   }
 </script>
 <style scoped>
     .home {
 
     }
-    .copyright{
+
+    .copyright {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -35,15 +36,17 @@
         background: #2E4258;
         padding: 10px 120px;
     }
-    .terms a{
+
+    .terms a {
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
         line-height: 14px;
         margin-right: 32px;
-        color:#fff!important;
+        color: #fff !important;
     }
-    .copyright p:nth-child(2){
+
+    .copyright p:nth-child(2) {
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -51,23 +54,27 @@
 
         color: #FFFFFF;
     }
-    @media (max-width:1150px){
-        .copyright{
+
+    @media (max-width: 1150px) {
+        .copyright {
             padding-left: 20px;
             padding-right: 20px;
         }
     }
-    @media (max-width: 768px){
-        .copyright{
+
+    @media (max-width: 768px) {
+        .copyright {
             padding: 16px;
             flex-direction: column;
         }
-        .terms{
+
+        .terms {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
         }
-        .terms a{
+
+        .terms a {
             margin: 0;
         }
     }

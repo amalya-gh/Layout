@@ -1,9 +1,10 @@
 <template>
     <div class="tab-content">
-        <md-steppers  md-alternative :md-active-step.sync="active" md-linear>
-            <md-step id="first" md-label="Տեղեկատվություն"  :md-done.sync="first">
+        <md-steppers md-alternative :md-active-step.sync="active" md-linear>
+            <md-step id="first" md-label="Տեղեկատվություն" :md-done.sync="first">
                 <single-tab/>
-                <md-button class="md-raised my-btn" @click="setDone('first', 'second')" :disabled="disableBtn">Հաջորդ</md-button>
+                <md-button class="md-raised my-btn" @click="setDone('first', 'second')" :disabled="disableBtn">Հաջորդ
+                </md-button>
             </md-step>
 
             <md-step id="second" md-label="Ծառայություններ" :md-done.sync="second">
@@ -40,11 +41,11 @@
         disableBtn: true
       }
     },
-    computed:{
+    computed: {
       ...mapState(['selectedValues'])
     },
-    watch:{
-      selectedValues (val) {
+    watch: {
+      selectedValues(val) {
         this.disableBtn = val
       }
     },
@@ -60,33 +61,33 @@
 </script>
 
 <style scoped>
-.my-btn  {
-    background: linear-gradient(180deg, #FFB938 0%, #DE950E 100%);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    padding: 10px 39px;
-    border: none;
-    outline: none;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #FFFFFF!important;
-    margin-top: 50px;
-    cursor: pointer;
-}
+    .my-btn {
+        background: linear-gradient(180deg, #FFB938 0%, #DE950E 100%);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        padding: 10px 39px;
+        border: none;
+        outline: none;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF !important;
+        margin-top: 50px;
+        cursor: pointer;
+    }
 
-.my-btn:hover {
-    background: linear-gradient(180deg, #E2A028 0%, #BE7B00 100%);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 25px;
-}
+    .my-btn:hover {
+        background: linear-gradient(180deg, #E2A028 0%, #BE7B00 100%);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 25px;
+    }
 
-.my-btn[disabled=disabled] {
-    background: #DCDCDC;
-    border-radius: 25px;
-}
+    .my-btn[disabled=disabled] {
+        background: #DCDCDC;
+        border-radius: 25px;
+    }
 
 </style>
 <style>

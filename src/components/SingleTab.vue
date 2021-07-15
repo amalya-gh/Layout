@@ -6,7 +6,8 @@
                 <p>Սպասարկման տեսակ*</p>
                 <div class="d-flex">
                     <label class="container">
-                        <input type="radio" value="Ֆիզ․ անձ" v-model="serviceType" name="serviceType" @change="getSelectedValues()">
+                        <input type="radio" value="Ֆիզ․ անձ" v-model="serviceType" name="serviceType"
+                               @change="getSelectedValues()">
                         <span class="checkmark">
                         <svg width="14" height="32" viewBox="0 0 14 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.45685 32H9.54312C10.3866 32 11.0767 31.3099 11.0767 30.4665V22.0578H11.9454C12.7891 22.0578 13.479 21.3674 13.479 20.5242V11.0415C13.479 10.1981 12.7891 9.508 11.9454 9.508H2.0543C1.21085 9.508 0.520752 10.1981 0.520752 11.0415V20.5242C0.520752 21.3674 1.21085 22.0578 2.0543 22.0578H2.92331V30.4665C2.92331 31.3099 3.58784 32 4.45685 32Z"
@@ -18,7 +19,8 @@
                         <span class="service-name">Ֆիզ․ անձ</span>
                     </label>
                     <label class="container">
-                        <input type="radio" value="Իրավ․ անձ" name="serviceType" v-model="serviceType" @change="getSelectedValues()">
+                        <input type="radio" value="Իրավ․ անձ" name="serviceType" v-model="serviceType"
+                               @change="getSelectedValues()">
                         <span class="checkmark">
                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -42,7 +44,8 @@
                 <p>Գործարքի տեսակ*</p>
                 <div class="d-flex">
                     <label class="container">
-                        <input value="Ներմուծում" @change="getSelectedValues()" type="radio" name="transactionType" v-model="transactionType">
+                        <input value="Ներմուծում" @change="getSelectedValues()" type="radio" name="transactionType"
+                               v-model="transactionType">
                         <span class="checkmark">
                         <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -56,7 +59,8 @@
                         <span class="service-name">Ներմուծում</span>
                     </label>
                     <label class="container">
-                        <input type="radio" value="Արտահանում" @change="getSelectedValues()"  name="transactionType" v-model="transactionType">
+                        <input type="radio" value="Արտահանում" @change="getSelectedValues()" name="transactionType"
+                               v-model="transactionType">
                         <span class="checkmark">
                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -70,8 +74,9 @@
                     </span>
                         <span class="service-name">Արտահանում</span>
                     </label>
-                    <label class="container" >
-                        <input type="radio" value="ԵԱՏՄ" @change="getSelectedValues()" name="transactionType" v-model="transactionType">
+                    <label class="container">
+                        <input type="radio" value="ԵԱՏՄ" @change="getSelectedValues()" name="transactionType"
+                               v-model="transactionType">
                         <span class="checkmark">
                        <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -89,7 +94,8 @@
                 <p>Փոխադրման եղանակը*</p>
                 <div class="d-flex">
                     <label class="container">
-                        <input type="radio" value="Օդային" @change="getSelectedValues()" name="truckType" v-model="truckType">
+                        <input type="radio" value="Օդային" @change="getSelectedValues()" name="truckType"
+                               v-model="truckType">
                         <span class="checkmark">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M32 16C32 14.72 30.88 13.6 29.6 13.6H20.8L12.8 0.80003H9.6L13.6 13.6H4.8L2.4 10.4H0L1.6 16L0 21.6H2.4L4.8 18.4H13.6L9.6 31.2H12.8L20.8 18.4H29.6C30.88 18.4 32 17.28 32 16Z"
@@ -100,7 +106,8 @@
                         <span class="service-name">Օդային</span>
                     </label>
                     <label class="container">
-                        <input type="radio" value="Ցամաքային" @change="getSelectedValues()" name="truckType" v-model="truckType">
+                        <input type="radio" value="Ցամաքային" @change="getSelectedValues()" name="truckType"
+                               v-model="truckType">
                         <span class="checkmark">
                        <svg width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.23091 11.5237C2.13423 11.5237 1.24156 12.4163 1.24156 13.5131C1.24156 14.6102 2.1343 15.503 3.23091 15.503C4.32861 15.503 5.22087 14.6102 5.22087 13.5131C5.22087 12.4163 4.32861 11.5237 3.23091 11.5237ZM3.23091 14.894C2.4696 14.894 1.84976 14.2751 1.84976 13.513C1.84976 12.7513 2.46917 12.1319 3.23091 12.1319C3.99282 12.1319 4.61278 12.7513 4.61278 13.513C4.61272 14.2751 3.99282 14.894 3.23091 14.894ZM32.0001 8.26038V7.0134L30.7555 1.53492C30.7555 1.15536 30.2045 1.15536 29.9948 1.15536H23.4198C23.2102 1.15536 23.0397 1.19517 23.0397 1.53492V11.5123C23.0397 12.5063 23.2102 12.6768 23.4198 12.6768H24.7611C25.1818 11.7507 26.1152 11.1052 27.1972 11.1052C28.2786 11.1052 29.2108 11.7511 29.6323 12.6768H31.6195C31.8295 12.6768 32.0001 12.5063 32.0001 12.2965V10.3783H31.6425V8.26038H32.0001ZM25.9691 7.00592H24.5314V6.71396H25.9691V7.00592ZM24.2432 6.24759V2.16918H29.7338L30.3614 6.24759H24.2432ZM30.6229 11.7901H29.6037C29.3158 11.2411 28.6882 10.8487 28.6882 10.8487H30.6229V11.7901ZM1.32995 10.4843H22.1278V12.8667H11.1056C10.7318 11.8398 9.74605 11.1052 8.59215 11.1052C7.43801 11.1052 6.45299 11.8397 6.07909 12.8667H5.83279C5.45901 11.8398 4.47417 11.1052 3.32003 11.1052C2.18306 11.1052 1.21021 11.8187 0.824133 12.821C0.34833 12.6841 0 12.2461 0 11.7258V11.6245C0 11.3667 0.0886956 11.1325 0.232179 10.9416V10.0113L0.221404 0.496931H21.7962L21.7745 10.0119H1.32995V10.4843ZM27.108 11.5237C26.0109 11.5237 25.1181 12.4163 25.1181 13.5131C25.1181 14.6102 26.0109 15.503 27.108 15.503C28.2051 15.503 29.0977 14.6102 29.0977 13.5131C29.0977 12.4163 28.2051 11.5237 27.108 11.5237ZM27.108 14.894C26.3463 14.894 25.7268 14.2751 25.7268 13.513C25.7268 12.7513 26.3456 12.1319 27.108 12.1319C27.87 12.1319 28.4897 12.7513 28.4897 13.513C28.4897 14.2751 27.8695 14.894 27.108 14.894ZM8.50303 11.5237C7.40605 11.5237 6.51325 12.4163 6.51325 13.5131C6.51325 14.6102 7.40605 15.503 8.50303 15.503C9.60037 15.503 10.4927 14.6102 10.4927 13.5131C10.4927 12.4163 9.60043 11.5237 8.50303 11.5237ZM8.50303 14.894C7.74172 14.894 7.12158 14.2751 7.12158 13.513C7.12158 12.7513 7.74136 12.1319 8.50303 12.1319C9.26464 12.1319 9.88454 12.7513 9.88454 13.513C9.8846 14.2751 9.26464 14.894 8.50303 14.894Z"
@@ -110,7 +117,8 @@
                         <span class="service-name">Ցամաքային</span>
                     </label>
                     <label class="container">
-                        <input type="radio" value="Երկաթուղային" @change="getSelectedValues()"  name="truckType"  v-model="truckType">
+                        <input type="radio" value="Երկաթուղային" @change="getSelectedValues()" name="truckType"
+                               v-model="truckType">
                         <span class="checkmark">
                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20.7295 0.509399H11.2158C10.2836 0.509399 9.38635 0.733183 8.57666 1.12742H23.3687C22.559 0.733183 21.6617 0.509399 20.7295 0.509399Z"
@@ -129,8 +137,9 @@
                     </span>
                         <span class="service-name">Երկաթուղային</span>
                     </label>
-                    <label class="container" >
-                        <input type="radio" value="Ծովային" @change="getSelectedValues()" name="truckType"  v-model="truckType">
+                    <label class="container">
+                        <input type="radio" value="Ծովային" @change="getSelectedValues()" name="truckType"
+                               v-model="truckType">
                         <span class="checkmark">
                        <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.71754 10.4342H2.137C1.88204 10.4342 1.67529 10.6409 1.67529 10.8959V14.3431C1.67529 14.5981 1.88204 14.8049 2.137 14.8049H9.71754C9.97256 14.8049 10.1793 14.5981 10.1793 14.3431V10.8959C10.1793 10.6409 9.97256 10.4342 9.71754 10.4342Z"
@@ -156,7 +165,8 @@
                         <span class="service-name">Ծովային</span>
                     </label>
                     <label class="container">
-                        <input type="radio" value="Փոստային" @change="getSelectedValues()" name="truckType"  v-model="truckType">
+                        <input type="radio" value="Փոստային" @change="getSelectedValues()" name="truckType"
+                               v-model="truckType">
                         <span class="checkmark">
                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0)">
@@ -188,14 +198,16 @@
                     <div class="md-layout-item">
                         <md-field>
                             <label>Ընտրել վայրը*</label>
-                            <md-select v-model="selectedPlaces" name="places" id="movies" multiple @md-selected="getSelectedValues()">
+                            <md-select v-model="selectedPlaces" name="places" id="movies" multiple
+                                       @md-selected="getSelectedValues()">
                                 <md-option v-for="(i, index) in places" :value="i" :key="index">{{i}}</md-option>
                             </md-select>
                         </md-field>
                         <div class="selected-block">
                             <p v-for="(i,index) in selectedPlaces" :key="i.trim()" class="selected-place">
                                 {{i}}
-                                <svg @click="deleteCurrent(index)" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                <svg @click="deleteCurrent(index)" width="14" height="14" viewBox="0 0 14 14"
+                                     fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13.5852 1.21015C13.8048 0.990505 13.8048 0.634382 13.5852 0.414735C13.3655 0.195088 13.0094 0.195088 12.7898 0.414735L0.414735 12.7897C0.195088 13.0094 0.195088 13.3655 0.414735 13.5852C0.634382 13.8048 0.990505 13.8048 1.21015 13.5852L13.5852 1.21015Z"
                                           fill="#BEBEBE"/>
@@ -237,24 +249,25 @@
         truckType: ''
       }
     },
-    methods:{
-        ...mapMutations(['setSelectedValues']),
+    methods: {
+      ...mapMutations(['setSelectedValues']),
       getSelectedValues() {
         if (this.serviceType && this.transactionType && this.truckType && this.selectedPlaces.length >= 1) {
           this.setSelectedValues(false)
         }
       },
-      deleteCurrent(val){
-        this.selectedPlaces.splice(val,1)
+      deleteCurrent(val) {
+        this.selectedPlaces.splice(val, 1)
       }
     }
   }
 </script>
 
 <style scoped>
-    h3{
-        margin-top:32px
+    h3 {
+        margin-top: 32px
     }
+
     .selected-block {
         overflow-y: auto;
         overflow-x: hidden;
@@ -386,32 +399,38 @@
         left: 0;
         width: 70px;
     }
-    @media (max-width:768px){
-        .single-tab{
+
+    @media (max-width: 768px) {
+        .single-tab {
             width: 100%;
         }
     }
-    @media (max-width: 425px){
-        .selected-block{
+
+    @media (max-width: 425px) {
+        .selected-block {
             width: 98%;
         }
-        .selected-place{
+
+        .selected-place {
             width: 100%;
         }
     }
 </style>
 <style>
-    .md-steppers.md-theme-default .md-stepper-header.md-active .md-stepper-number{
-        background: none!important;
+    .md-steppers.md-theme-default .md-stepper-header.md-active .md-stepper-number {
+        background: none !important;
         border: 2px solid #009DBC;
-        color: #009DBC!important;
+        color: #009DBC !important;
     }
-    .md-steppers.md-theme-default .md-stepper-header.md-done .md-stepper-number{
-        background:  #009DBC!important;
+
+    .md-steppers.md-theme-default .md-stepper-header.md-done .md-stepper-number {
+        background: #009DBC !important;
     }
-    .md-button:not([disabled]):hover:before{
-        background: none!important;
+
+    .md-button:not([disabled]):hover:before {
+        background: none !important;
     }
+
     .md-menu.md-select {
         background: #FFFFFF;
         border: 1px solid #D1D1D1;
@@ -429,19 +448,23 @@
     .md-steppers.md-theme-default {
         background: #F7F7F7 !important;
     }
-    .md-checkbox.md-theme-default.md-checked .md-checkbox-container:after{
-        border-color: #F9AA19!important;
+
+    .md-checkbox.md-theme-default.md-checked .md-checkbox-container:after {
+        border-color: #F9AA19 !important;
     }
+
     .md-checkbox.md-theme-default.md-checked.md-primary .md-checkbox-container,
-    .md-checkbox.md-theme-default .md-checkbox-container{
-        background: transparent!important;
-        border-color: transparent!important;
+    .md-checkbox.md-theme-default .md-checkbox-container {
+        background: transparent !important;
+        border-color: transparent !important;
     }
-    .md-list.md-theme-default .md-selected .md-list-item-content{
-        color: #F9AA19!important;
+
+    .md-list.md-theme-default .md-selected .md-list-item-content {
+        color: #F9AA19 !important;
     }
-    @media (max-width: 425px){
-        .md-menu.md-select{
+
+    @media (max-width: 425px) {
+        .md-menu.md-select {
             max-width: 98% !important;
         }
     }
