@@ -292,7 +292,9 @@
     .md-menu-content.md-select-menu {
         width: auto !important;
     }
-
+    .lang>.md-field.md-theme-default.md-has-value .md-input{
+        -webkit-text-fill-color:black!important;
+    }
     .lang > .md-field > .md-menu.md-select {
         border: none;
         padding: 0;

@@ -94,6 +94,9 @@
     .md-steppers-navigation {
         box-shadow: none !important;
     }
+    .md-field.md-theme-default.md-has-value .md-input{
+        -webkit-text-fill-color:transparent!important;
+    }
 
     @media (max-width: 768px) {
         .md-stepper-label {
